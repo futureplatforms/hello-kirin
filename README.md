@@ -31,6 +31,7 @@ This name should be substituted with your app's name in the following (and filen
     build.gradle
     core/src/main/resources/org/hello/HelloKirin_core.gwt.xml
     gwt/build.gradle
+    gwt/superdev.sh
     gwt/src/main/resources/hello/HelloKirin.gwt.xml
     gwt/src/main/resources/hello/HelloKirin_ie6_Debug.gwt.xml
     gwt/src/main/resources/hello/HelloKirin_ie6_Release.gwt.xml
