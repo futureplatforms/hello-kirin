@@ -37,5 +37,6 @@ This name should be substituted with your app's name in the following (and filen
     gwt/src/main/resources/hello/HelloKirin_ie6_Release.gwt.xml
     gwt/src/main/resources/hello/HelloKirin_safari_Debug.gwt.xml
     gwt/src/main/resources/hello/HelloKirin_safari_Release.gwt.xml
+    gwt/src/main/webapp/Kirin.html
     ios/build.gradle
     ios/ios_prebuild.sh
