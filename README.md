@@ -12,21 +12,15 @@ To run the iOS project, open `ios/HelloKirin.xcodeproj`.
 
 ## Folder structure
 
-    android:  HelloKirin Android app
-    core:  Core Kirin code goes in here.  All Java code
-           must be GWT-compatible
-    core/src/main/resources:  GWT module file for the
-                              core project
-    gwt:  The GWT module.  Mostly this will consume
-          only the core library, however it may also
-          provide GWT code for your project.
-    gwt/src/main/resources:  GWT modules for Safari
-                            (iOS) and ie6 (Windows 
-                            Phone native)
-    gwt/src/main/webapp:  The Kirin.html file which iOS
-                          loads into its hidden
-                          UIWebView
-    ios:  HelloKirin iOS app
+| Folder | Description |
+|----|----|
+| `android` | HelloKirin Android app |
+| `core` | Core Kirin code goes in here.  All Java code must be GWT-compatible |
+| `core/src/main/resources` | GWT module file for the core project |
+| `gwt` | The GWT module.  Mostly this will consume only the core library, however it may also provide GWT code for your project. |
+| `gwt/src/main/resources` | GWT modules for Safari (iOS) and ie6 (Windows Phone native) |
+| `gwt/src/main/webapp` | The Kirin.html file which iOS loads into its hidden `UIWebView` |
+| `ios` | HelloKirin iOS app |
     
 ## Use this as the basis for your own new project
 
