@@ -29,9 +29,12 @@ This app is titled "org.hello.HelloKirin".
 This name should be substituted with your app's name in the following (and filenames changed where appropriate):
     
     build.gradle
+    core/src/main/resources/org/hello/HelloKirin_core.gwt.xml
     gwt/build.gradle
     gwt/src/main/resources/hello/HelloKirin.gwt.xml
     gwt/src/main/resources/hello/HelloKirin_ie6_Debug.gwt.xml
     gwt/src/main/resources/hello/HelloKirin_ie6_Release.gwt.xml
     gwt/src/main/resources/hello/HelloKirin_safari_Debug.gwt.xml
     gwt/src/main/resources/hello/HelloKirin_safari_Release.gwt.xml
+    ios/build.gradle
+    ios/ios_prebuild.sh
