@@ -1,0 +1,36 @@
+dependencies {
+    compile 'com.futureplatforms.kirin:ios:' + kirinVersion
+}
+
+def libsFolder = file('HelloKirin/lib/Kirin')
+
+task deleteOld(type: Exec) {
+    workingDir = 'HelloKirin/lib'
+    commandLine 'rm', '-rf', 'Kirin'
+}
+
+deleteOld.doFirst {
+    if (!libsFolder.isDirectory()) {
+        libsFolder.mkdirs()
+    }
+}
+
+/**
+ * This task is taking the Kirin ios jar (containing KirinKit.framework) and unzipping
+ * it where Xcode expects to find it.
+ */
+task unpackNew(type: Exec) {
+    workingDir = libsFolder
+    def jarName = 'ios-' + kirinVersion + '.jar'
+    def kirinIos = configurations.runtime.find { File file -> file.name.equals(jarName) }
+    commandLine 'unzip', kirinIos
+}
+
+unpackNew.doFirst {
+    if (!libsFolder.isDirectory()) {
+        libsFolder.mkdirs()
+    }
+}
+
+unpackNew.dependsOn(deleteOld)
+build.dependsOn(unpackNew)

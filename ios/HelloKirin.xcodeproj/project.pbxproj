@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		096BF14D1CD8CAFB0040C3E2 /* Kirin */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 096BF14E1CD8CAFC0040C3E2 /* Build configuration list for PBXAggregateTarget "Kirin" */;
+			buildPhases = (
+				096BF1511CD8CB000040C3E2 /* iOS Prebuild */,
+			);
+			dependencies = (
+			);
+			name = Kirin;
+			productName = Kirin;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		096BF11C1CD8C9F40040C3E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BF11B1CD8C9F40040C3E2 /* main.m */; };
+		096BF11F1CD8C9F40040C3E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BF11E1CD8C9F40040C3E2 /* AppDelegate.m */; };
+		096BF1221CD8C9F40040C3E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BF1211CD8C9F40040C3E2 /* ViewController.m */; };
+		096BF1251CD8C9F40040C3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096BF1231CD8C9F40040C3E2 /* Main.storyboard */; };
+		096BF1271CD8C9F40040C3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096BF1261CD8C9F40040C3E2 /* Assets.xcassets */; };
+		096BF12A1CD8C9F40040C3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096BF1281CD8C9F40040C3E2 /* LaunchScreen.storyboard */; };
+		096BF1531CD8D0DD0040C3E2 /* KirinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096BF1521CD8D0DD0040C3E2 /* KirinKit.framework */; };
+		096BF1581CD8D9090040C3E2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 096BF1571CD8D9090040C3E2 /* libsqlite3.tbd */; };
+		096BF15A1CD8D9110040C3E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096BF1591CD8D9110040C3E2 /* UIKit.framework */; };
+		096BF15C1CD8D9150040C3E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096BF15B1CD8D9150040C3E2 /* CoreLocation.framework */; };
+		096BF15E1CD8D91C0040C3E2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096BF15D1CD8D91C0040C3E2 /* MobileCoreServices.framework */; };
+		096BF1601CD8D9260040C3E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096BF15F1CD8D9260040C3E2 /* Foundation.framework */; };
+		096BF1621CD8DAF80040C3E2 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 096BF1611CD8DAF80040C3E2 /* app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		096BF1171CD8C9F40040C3E2 /* HelloKirin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloKirin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		096BF11B1CD8C9F40040C3E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		096BF11D1CD8C9F40040C3E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		096BF11E1CD8C9F40040C3E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		096BF1201CD8C9F40040C3E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		096BF1211CD8C9F40040C3E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		096BF1241CD8C9F40040C3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		096BF1261CD8C9F40040C3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		096BF1291CD8C9F40040C3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		096BF12B1CD8C9F40040C3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096BF1341CD8C9F50040C3E2 /* HelloKirinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloKirinTests.m; sourceTree = "<group>"; };
+		096BF1361CD8C9F50040C3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096BF13F1CD8C9F50040C3E2 /* HelloKirinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloKirinUITests.m; sourceTree = "<group>"; };
+		096BF1411CD8C9F50040C3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096BF1521CD8D0DD0040C3E2 /* KirinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KirinKit.framework; path = HelloKirin/lib/Kirin/KirinKit.framework; sourceTree = "<group>"; };
+		096BF1571CD8D9090040C3E2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		096BF1591CD8D9110040C3E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		096BF15B1CD8D9150040C3E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		096BF15D1CD8D91C0040C3E2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		096BF15F1CD8D9260040C3E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		096BF1611CD8DAF80040C3E2 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; name = app; path = ../gwt/build_gradle/app; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096BF1141CD8C9F40040C3E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096BF1601CD8D9260040C3E2 /* Foundation.framework in Frameworks */,
+				096BF15E1CD8D91C0040C3E2 /* MobileCoreServices.framework in Frameworks */,
+				096BF15C1CD8D9150040C3E2 /* CoreLocation.framework in Frameworks */,
+				096BF15A1CD8D9110040C3E2 /* UIKit.framework in Frameworks */,
+				096BF1581CD8D9090040C3E2 /* libsqlite3.tbd in Frameworks */,
+				096BF1531CD8D0DD0040C3E2 /* KirinKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		096BF10E1CD8C9F40040C3E2 = {
+			isa = PBXGroup;
+			children = (
+				096BF15F1CD8D9260040C3E2 /* Foundation.framework */,
+				096BF15D1CD8D91C0040C3E2 /* MobileCoreServices.framework */,
+				096BF15B1CD8D9150040C3E2 /* CoreLocation.framework */,
+				096BF1591CD8D9110040C3E2 /* UIKit.framework */,
+				096BF1571CD8D9090040C3E2 /* libsqlite3.tbd */,
+				096BF1521CD8D0DD0040C3E2 /* KirinKit.framework */,
+				096BF1191CD8C9F40040C3E2 /* HelloKirin */,
+				096BF1331CD8C9F50040C3E2 /* HelloKirinTests */,
+				096BF13E1CD8C9F50040C3E2 /* HelloKirinUITests */,
+				096BF1181CD8C9F40040C3E2 /* Products */,
+				096BF1611CD8DAF80040C3E2 /* app */,
+			);
+			sourceTree = "<group>";
+		};
+		096BF1181CD8C9F40040C3E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				096BF1171CD8C9F40040C3E2 /* HelloKirin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		096BF1191CD8C9F40040C3E2 /* HelloKirin */ = {
+			isa = PBXGroup;
+			children = (
+				096BF11D1CD8C9F40040C3E2 /* AppDelegate.h */,
+				096BF11E1CD8C9F40040C3E2 /* AppDelegate.m */,
+				096BF1201CD8C9F40040C3E2 /* ViewController.h */,
+				096BF1211CD8C9F40040C3E2 /* ViewController.m */,
+				096BF1231CD8C9F40040C3E2 /* Main.storyboard */,
+				096BF1261CD8C9F40040C3E2 /* Assets.xcassets */,
+				096BF1281CD8C9F40040C3E2 /* LaunchScreen.storyboard */,
+				096BF12B1CD8C9F40040C3E2 /* Info.plist */,
+				096BF11A1CD8C9F40040C3E2 /* Supporting Files */,
+			);
+			path = HelloKirin;
+			sourceTree = "<group>";
+		};
+		096BF11A1CD8C9F40040C3E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096BF11B1CD8C9F40040C3E2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		096BF1331CD8C9F50040C3E2 /* HelloKirinTests */ = {
+			isa = PBXGroup;
+			children = (
+				096BF1341CD8C9F50040C3E2 /* HelloKirinTests.m */,
+				096BF1361CD8C9F50040C3E2 /* Info.plist */,
+			);
+			path = HelloKirinTests;
+			sourceTree = "<group>";
+		};
+		096BF13E1CD8C9F50040C3E2 /* HelloKirinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				096BF13F1CD8C9F50040C3E2 /* HelloKirinUITests.m */,
+				096BF1411CD8C9F50040C3E2 /* Info.plist */,
+			);
+			path = HelloKirinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		096BF1161CD8C9F40040C3E2 /* HelloKirin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096BF1441CD8C9F50040C3E2 /* Build configuration list for PBXNativeTarget "HelloKirin" */;
+			buildPhases = (
+				096BF1131CD8C9F40040C3E2 /* Sources */,
+				096BF1141CD8C9F40040C3E2 /* Frameworks */,
+				096BF1151CD8C9F40040C3E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloKirin;
+			productName = HelloKirin;
+			productReference = 096BF1171CD8C9F40040C3E2 /* HelloKirin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		096BF10F1CD8C9F40040C3E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Douglas Hoskins";
+				TargetAttributes = {
+					096BF1161CD8C9F40040C3E2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					096BF14D1CD8CAFB0040C3E2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 096BF1121CD8C9F40040C3E2 /* Build configuration list for PBXProject "HelloKirin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 096BF10E1CD8C9F40040C3E2;
+			productRefGroup = 096BF1181CD8C9F40040C3E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				096BF1161CD8C9F40040C3E2 /* HelloKirin */,
+				096BF14D1CD8CAFB0040C3E2 /* Kirin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		096BF1151CD8C9F40040C3E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096BF1621CD8DAF80040C3E2 /* app in Resources */,
+				096BF12A1CD8C9F40040C3E2 /* LaunchScreen.storyboard in Resources */,
+				096BF1271CD8C9F40040C3E2 /* Assets.xcassets in Resources */,
+				096BF1251CD8C9F40040C3E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096BF1511CD8CB000040C3E2 /* iOS Prebuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "iOS Prebuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./ios_prebuild.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		096BF1131CD8C9F40040C3E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096BF1221CD8C9F40040C3E2 /* ViewController.m in Sources */,
+				096BF11F1CD8C9F40040C3E2 /* AppDelegate.m in Sources */,
+				096BF11C1CD8C9F40040C3E2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		096BF1231CD8C9F40040C3E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096BF1241CD8C9F40040C3E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		096BF1281CD8C9F40040C3E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096BF1291CD8C9F40040C3E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		096BF1421CD8C9F50040C3E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/HelloKirin/lib/Kirin";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../gwt/build_gradle/bindings/BINDINGS/ios",
+					"$(PROJECT_DIR)/../gwt/build_gradle/bindings/SERVICE_BINDINGS/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		096BF1431CD8C9F50040C3E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/HelloKirin/lib/Kirin";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../gwt/build_gradle/bindings/BINDINGS/ios",
+					"$(PROJECT_DIR)/../gwt/build_gradle/bindings/SERVICE_BINDINGS/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		096BF1451CD8C9F50040C3E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloKirin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hello.HelloKirin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		096BF1461CD8C9F50040C3E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloKirin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hello.HelloKirin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		096BF14F1CD8CAFC0040C3E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		096BF1501CD8CAFC0040C3E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		096BF1541CD8D6BD0040C3E2 /* Debug:  SDM */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/HelloKirin/lib/Kirin";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"SDM=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../gwt/build_gradle/bindings/BINDINGS/ios",
+					"$(PROJECT_DIR)/../gwt/build_gradle/bindings/SERVICE_BINDINGS/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug:  SDM";
+		};
+		096BF1551CD8D6BD0040C3E2 /* Debug:  SDM */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloKirin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hello.HelloKirin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Debug:  SDM";
+		};
+		096BF1561CD8D6BD0040C3E2 /* Debug:  SDM */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Debug:  SDM";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		096BF1121CD8C9F40040C3E2 /* Build configuration list for PBXProject "HelloKirin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096BF1421CD8C9F50040C3E2 /* Debug */,
+				096BF1541CD8D6BD0040C3E2 /* Debug:  SDM */,
+				096BF1431CD8C9F50040C3E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096BF1441CD8C9F50040C3E2 /* Build configuration list for PBXNativeTarget "HelloKirin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096BF1451CD8C9F50040C3E2 /* Debug */,
+				096BF1551CD8D6BD0040C3E2 /* Debug:  SDM */,
+				096BF1461CD8C9F50040C3E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096BF14E1CD8CAFC0040C3E2 /* Build configuration list for PBXAggregateTarget "Kirin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096BF14F1CD8CAFC0040C3E2 /* Debug */,
+				096BF1561CD8D6BD0040C3E2 /* Debug:  SDM */,
+				096BF1501CD8CAFC0040C3E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 096BF10F1CD8C9F40040C3E2 /* Project object */;
+}

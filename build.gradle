@@ -1,0 +1,47 @@
+apply plugin: 'java'
+
+Closure cl = {
+    task -> println "I'm $task.project.name, mavenLocal is " + mavenLocal()
+}
+task hello << cl
+project(':core') {
+    task hello << cl
+}
+
+ext.guavaVersion = '19.0'
+ext.gwtVersion = '2.7.0'
+ext.gwtExporterVersion = '2.5.1'
+ext.kirinVersion = '2.0.1'
+
+configure (subprojects.findAll {!it.name.contains('android') && !it.name.contains('shared')}) {
+	apply plugin: 'java'
+	sourceCompatibility = 1.7
+	targetCompatibility = 1.7
+
+	dependencies {
+	    compile 'com.google.guava:guava:' + guavaVersion
+        testCompile 'com.futureplatforms.kirin:console:' + kirinVersion
+	    testCompile 'junit:junit:4.12'
+		testCompile 'org.jmock:jmock-junit4:2.8.1'
+    }
+}
+
+subprojects {
+	repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+project(':gwt') {
+    dependencies {
+        compile project(':core')
+    }
+}
+
+project(':ios') {
+    dependencies {
+        compile project(':gwt')
+    }
+}

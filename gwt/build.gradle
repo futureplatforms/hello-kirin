@@ -1,0 +1,93 @@
+buildscript {
+    repositories {
+        jcenter() //repository where to fetch gwt gradle plugin
+    }
+
+    dependencies {
+        classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
+    }
+}
+
+/* TODO Replace with your app name */
+def moduleName = 'HelloKirin'
+
+apply plugin: 'war'
+apply plugin: 'gwt'
+
+dependencies {
+    compile 'com.futureplatforms.kirin:gwt:' + kirinVersion
+	compile 'com.google.gwt:gwt-user:' + gwtVersion
+	compile 'com.google.gwt:gwt-dev:' + gwtVersion
+	compile 'javax.validation:validation-api:1.0.0.GA'
+	compile 'javax.validation:validation-api:1.0.0.GA:sources'
+	compile 'org.timepedia.exporter:gwtexporter:' + gwtExporterVersion
+	compile 'com.google.guava:guava-gwt:' + guavaVersion
+}
+
+task explodedWar(type: Copy) {
+    file("$buildDir/app").deleteDir()
+    into "$buildDir/app"
+    with war
+}
+
+build.dependsOn explodedWar
+
+build << {
+    /**
+     * Sorry for the build script gymnastics here.
+     *
+     * Back in Maven times this stuff was done by specifying config parameters to gwt-maven-plugin.
+     * gwt-gradle-plugin doesn't seem to be as configurable so we're doing it manually.
+     *
+     * The resulting file structure is much cleaner than before IMO and we aren't including
+     * stuff we shouldn't be in the actual builds.
+     */
+
+    // This is a refinement from Maven days.  Move the bindings out of the app folder so they
+    // don't end up in the actual build.
+    println 'Absolute path is: ' + file('.').absolutePath
+    file("$buildDir/bindings").deleteDir();
+    file("$buildDir/bindings").mkdir()
+    file("$buildDir/app/" + moduleName + '/BINDINGS').renameTo(file("$buildDir/bindings/BINDINGS"))
+    file("$buildDir/app/" + moduleName + '/SERVICE_BINDINGS').renameTo(file("$buildDir/bindings/SERVICE_BINDINGS"))
+
+    if (project.hasProperty('configuration') && !'RELEASE'.equalsIgnoreCase(project.configuration)) {
+        // For non-release delete everything except symbolMaps
+
+        // Move symbolMaps to temp folder
+        file("$buildDir/app/WEB-INF/deploy/" + moduleName + '/symbolMaps').renameTo(file("$buildDir/app/symbolMaps"))
+
+        // Delete WEB-INF then recreate the containing folder, and restore symbolMaps
+        file("$buildDir/app/WEB-INF").deleteDir()
+        file("$buildDir/app/WEB-INF").mkdir()
+        file("$buildDir/app/WEB-INF/deploy").mkdir()
+        file("$buildDir/app/WEB-INF/deploy/" + moduleName).mkdir()
+        file("$buildDir/app/symbolMaps").renameTo(file("$buildDir/app/WEB-INF/deploy/" + moduleName + '/symbolMaps'))
+    } else {
+        file("$buildDir/app/WEB-INF").deleteDir()
+    }
+
+    // Get rid of WEB-INF and META-INF which includes stuff like the libraries used when building, symbol maps,
+    // manifest, other stuff that is only useful if you are deploying the GWT app to a server.
+    file("$buildDir/app/META-INF").deleteDir()
+}
+
+
+gwt {
+    // gwtModule gets passed in as a parameter to the root build script
+    if (project.hasProperty('gwtModule')) {
+        modules project.gwtModule
+    } else {
+        modules 'GWT_MODULE_NOT_DEFINED'
+    }
+
+    src += files(project(':core').sourceSets.main.allJava.srcDirs) + files(project(':core').sourceSets.main.output.resourcesDir)
+    compiler {
+        strict = true;
+    }
+    maxHeapSize='1024m'
+}
+
+jar {
+     from sourceSets.main.allSource
+}

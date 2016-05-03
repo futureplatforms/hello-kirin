@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='HelloKirin'>
+  <!-- The main Kirin GWT bundle that contains the entrypoint and JS codes -->
+  <inherits name='com.futureplatforms.kirin.gwt.KirinGwt'/>
+  <!-- TODO The core module for this project, located in core/src/resources/<yourpackage>/YourApp_core.gwt.xml -->
+  <inherits name='org.hello.HelloKirin_core'/>
+  
+  <!-- 
+  This module will build the project for all six possible user agents.
+  This will take a while.  If you just want iOS use the _safari module, and
+  if you just want WP8 or Windows8 use the _ie6 module.
+  -->
+  
+</module>

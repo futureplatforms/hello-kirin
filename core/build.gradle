@@ -1,0 +1,17 @@
+dependencies {
+	compile 'com.futureplatforms.kirin:core:' + kirinVersion
+    compile 'com.futureplatforms.kirin:gwtstub:' + kirinVersion
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+
+// Make a separate sources jar.  For some reason the Android plugin will not build with
+// a combined binaries/sources jar; it complains of duplicate resource files
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+jar.dependsOn('sourcesJar')
